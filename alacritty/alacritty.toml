@@ -4,3 +4,8 @@ opacity = 0.8
 [window.padding]
 x = 10
 y = 10
+
+[colors.primary]
+background="#2b283b"
+
+[colors.normal]
