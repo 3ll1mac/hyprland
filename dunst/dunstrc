@@ -3,7 +3,6 @@
 [global]
     ### Display ###
 
-    # Which monitor should the notifications be displayed on.
     monitor = 0
 
     # Display notification on focused monitor.  Possible modes are:
@@ -19,13 +18,14 @@
     # will be ignored.
     follow = none
 
-    ### Geometry ###
+### Geometry ###
 
     # The width of the window, excluding the frame.
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = 300
+    width = (0, 300)
+
 
     # The height of a single notification, excluding the frame.
     # dynamic height from 0 to 300
@@ -36,7 +36,9 @@
     #       and the given value is treated as the maximum height
 
     # Position the notification in the top right corner
-    origin = top-right
+    origin = bottom-center
+    #origin = top-right
+
 
     # Offset from the origin
     # NOTE: Dunst from version 1.11 and older use this alternative notation
@@ -89,7 +91,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 0
+    transparency = 50
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -98,20 +100,20 @@
     separator_height = 2
 
     # Padding between text and separator.
-    padding = 8
+    padding = 10
 
     # Horizontal padding.
-    horizontal_padding = 8
+    horizontal_padding = 10
 
     # Padding between text and icon.
     text_icon_padding = 0
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#aaaaaa"
+    frame_color = "#ffffff"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -144,7 +146,7 @@
 
     ### Text ###
 
-    font = Monospace 8
+    font = Monospace 13
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -190,7 +192,7 @@
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
-    alignment = left
+    alignment = center
 
     # Vertical alignment of message text and icon.
     # Possible values are "top", "center" and "bottom".
@@ -273,7 +275,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 0
+    corner_radius = 70
 
     # Define which corners to round when drawing the window. If the corner radius
     # is set to 0 this option will be ignored.
@@ -343,14 +345,14 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#222222"
-    foreground = "#888888"
-    timeout = 10
+    background = "#80808090" #
+    foreground = "#ffffff"
+    timeout = 1
     # Icon for notifications with low urgency
-    default_icon = dialog-information
+    #default_icon = dialog-information
 
 [urgency_normal]
-    background = "#285577"
+    background = "#ffffff"
     foreground = "#ffffff"
     timeout = 10
     override_pause_level = 30
@@ -484,10 +486,10 @@
 #    summary = *says*
 #    urgency = critical
 #
-#[twitter]
-#    appname = Pidgin
-#    summary = *twitter.com*
-#    urgency = normal
+[twitter]
+    appname = Pidgin
+    summary = *twitter.com*
+    urgency = critical
 #
 #[stack-volumes]
 #    appname = "some_volume_notifiers"
