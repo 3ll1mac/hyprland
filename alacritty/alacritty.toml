@@ -1,11 +1,11 @@
 [window]
-opacity = 0.75
+opacity = 0.60
 
 [window.padding]
 x = 10
 y = 10
 
 [colors.primary]
-background="#2b283b"
+background="#020a1a"
 
 [colors.normal]
