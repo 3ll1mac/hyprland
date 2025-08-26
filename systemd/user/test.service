@@ -1,0 +1,7 @@
+[Unit]
+Description=Run my script
+
+[Service]
+Type=oneshot
+ExecStart=/home/ellimac/.config/scripts/batterie.sh
+
