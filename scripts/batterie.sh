@@ -1,5 +1,8 @@
 #!/bin/sh
 
+quinze=0
+dix=0
+cinq=0
 
 status=`cat /sys/class/power_supply/BAT0/status`
 current_charge=`cat /sys/class/power_supply/BAT0/charge_now`
