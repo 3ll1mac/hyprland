@@ -1,6 +1,8 @@
 # hyprland
 
-Hyprland config on Arch Linux
+hyprland config on Arch Linux
+
+![image](readme_infos/example_screenshot.png)
 
 ## Config branch
 
