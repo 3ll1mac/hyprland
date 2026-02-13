@@ -3,8 +3,9 @@ opacity = 0.60
 
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/nightfox.toml"
+    "~/.config/alacritty/themes/themes/nightfly.toml"
 ]
+live_config_reload = true
 
 [window.padding]
 x = 10
