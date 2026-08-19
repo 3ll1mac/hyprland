@@ -4,3 +4,9 @@ auto-format = true
 file-types = ["cpp", "cc", "hh", "hxx", "hpp"]
 formatter = { command = "clang-format --style=file:/home/ellimac/.config/helix/clang-format-cxx", args= [ "%{buffer_name}"] }
 
+[[language]]
+name = "c"
+auto-format = false
+file-types = ["c", "h"]
+formatter = { command = "clang-format --style=file:/home/ellimac/.config/helix/clang-format", args= [ "%{buffer_name}"] }
+
